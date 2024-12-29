@@ -1,0 +1,27 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.address span {
+  font-weight: 400;
+  position: relative;
+  padding-left: 20px;
+  background-color: beige;
+  border-radius: 8px;
+}
+
+.address span::before {
+  content: " ";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 48%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: blue;
+}
